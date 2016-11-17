@@ -15,4 +15,8 @@ describe ('Fixnum#coin') do
     expect(24.coin()).to(eq("0 quarters 2 dimes 0 nickels 4 pennies"))
   end
 
+  it("Will output the correct number of quarters") do
+    expect(79.coin()).to(eq("3 quarters 0 dimes 0 nickels 4 pennies"))
+  end
+
 end
