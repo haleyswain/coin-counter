@@ -12,6 +12,9 @@ class Fixnum
       elsif amount <= 9
         amount -= 5
         nickel_counter += 1
+      elsif amount <= 24
+        amount -= 10
+        dime_counter += 1
       end
     end
     quarter_counter.to_s + " quarters " + dime_counter.to_s + " dimes " + nickel_counter.to_s + " nickels " + penny_counter.to_s + " pennies"
